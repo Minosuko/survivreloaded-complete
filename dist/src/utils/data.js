@@ -23,13 +23,13 @@ exports.Config = (0, misc_1.readJSON)("config.json");
 exports.Debug = exports.Config.debug ?? {};
 exports.Config.diagonalSpeed = exports.Config.movementSpeed / Math.SQRT2;
 /**
- * Return the type assigned to an ID.
- * @param id The ID to check for.
- */
+	* Return the type assigned to an ID.
+	* @param id The ID to check for.
+	*/
 function IdToType(id) {
-    for (const type in exports.TypeToId)
-        if (exports.TypeToId[type] === id)
-            return type;
-    return "";
+	for (const type in exports.TypeToId)
+		if (exports.TypeToId[type] === id)
+			return type;
+	return "";
 }
 exports.IdToType = IdToType;

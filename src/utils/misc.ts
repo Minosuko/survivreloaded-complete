@@ -9,39 +9,39 @@ import type { Bullet } from "../game/bullet";
 import type { Player } from "../game/objects/player";
 
 export class Item {
-    type: string;
-    count: number;
+	type: string;
+	count: number;
 
-    constructor(type: string, count: number) {
-        this.type = type;
-        this.count = count;
-    }
+	constructor(type: string, count: number) {
+		this.type = type;
+		this.count = count;
+	}
 }
 
 export class DamageRecord {
-    damaged: GameObject;
-    damager: Player;
-    bullet: Bullet;
+	damaged: GameObject;
+	damager: Player;
+	bullet: Bullet;
 
-    constructor(damaged: GameObject, damager: Player, bullet: Bullet) {
-        this.damaged = damaged;
-        this.damager = damager;
-        this.bullet = bullet;
-    }
+	constructor(damaged: GameObject, damager: Player, bullet: Bullet) {
+		this.damaged = damaged;
+		this.damager = damager;
+		this.bullet = bullet;
+	}
 }
 
 export class Emote {
-    playerId: number;
-    position: Vec2;
-    type: number;
-    isPing: boolean;
+	playerId: number;
+	position: Vec2;
+	type: number;
+	isPing: boolean;
 
-    constructor(playerId: number, position: Vec2, type: number, isPing: boolean) {
-        this.playerId = playerId;
-        this.position = position;
-        this.type = type;
-        this.isPing = isPing;
-    }
+	constructor(playerId: number, position: Vec2, type: number, isPing: boolean) {
+		this.playerId = playerId;
+		this.position = position;
+		this.type = type;
+		this.isPing = isPing;
+	}
 }
 
 /**
@@ -50,8 +50,8 @@ export class Emote {
  * @param value The value to check for.
  */
 export function removeFrom<T>(array: T[], value: T): void {
-    const index: number = array.indexOf(value);
-    if (index !== -1) array.splice(index, 1);
+	const index: number = array.indexOf(value);
+	if (index !== -1) array.splice(index, 1);
 }
 
 /**
@@ -59,8 +59,8 @@ export function removeFrom<T>(array: T[], value: T): void {
  * @param message The content to print.
  */
 export function log(message: string): void {
-    const date: Date = new Date();
-    console.log(`[${date.toLocaleDateString("en-US")} ${date.toLocaleTimeString("en-US")}] ${message}`);
+	const date: Date = new Date();
+	console.log(`[${date.toLocaleDateString("en-US")} ${date.toLocaleTimeString("en-US")}] ${message}`);
 }
 
 /**
@@ -77,48 +77,48 @@ export const readJSON = <T>(path: string): T => JSON.parse(fs.readFileSync(path,
  * @param err A callback invoked whenever the request cannot be retrieved.
  */
 export function readPostedJSON<T>(
-    res: HttpResponse,
-    cb: (json: T) => void,
-    err: () => void
+	res: HttpResponse,
+	cb: (json: T) => void,
+	err: () => void
 ): void {
-    let buffer: Buffer | Uint8Array;
-    /* Register data cb */
-    res.onData((ab, isLast) => {
-        const chunk = Buffer.from(ab);
-        if (isLast) {
-            let json: T;
-            if (buffer) {
-                try {
-                    // @ts-expect-error JSON.parse can accept a Buffer as an argument
-                    json = JSON.parse(Buffer.concat([buffer, chunk]));
-                } catch (e) {
-                    /* res.close calls onAborted */
-                    res.close();
-                    return;
-                }
-                cb(json);
-            } else {
-                try {
-                    // @ts-expect-error JSON.parse can accept a Buffer as an argument
-                    json = JSON.parse(chunk);
-                } catch (e) {
-                    /* res.close calls onAborted */
-                    res.close();
-                    return;
-                }
-                cb(json);
-            }
-        } else {
-            if (buffer) {
-                buffer = Buffer.concat([buffer, chunk]);
-            } else {
-                buffer = Buffer.concat([chunk]);
-            }
-        }
-    });
+	let buffer: Buffer | Uint8Array;
+	/* Register data cb */
+	res.onData((ab, isLast) => {
+		const chunk = Buffer.from(ab);
+		if (isLast) {
+			let json: T;
+			if (buffer) {
+				try {
+					// @ts-expect-error JSON.parse can accept a Buffer as an argument
+					json = JSON.parse(Buffer.concat([buffer, chunk]));
+				} catch (e) {
+					/* res.close calls onAborted */
+					res.close();
+					return;
+				}
+				cb(json);
+			} else {
+				try {
+					// @ts-expect-error JSON.parse can accept a Buffer as an argument
+					json = JSON.parse(chunk);
+				} catch (e) {
+					/* res.close calls onAborted */
+					res.close();
+					return;
+				}
+				cb(json);
+			}
+		} else {
+			if (buffer) {
+				buffer = Buffer.concat([buffer, chunk]);
+			} else {
+				buffer = Buffer.concat([chunk]);
+			}
+		}
+	});
 
-    /* Register error cb */
-    res.onAborted(err);
+	/* Register error cb */
+	res.onAborted(err);
 }
 
 /**
@@ -126,37 +126,37 @@ export function readPostedJSON<T>(
  * @param file The name or path to the file.
  */
 export function getContentType(file: string): string {
-    // this should be done with a switch
-    let contentType = "";
+	// this should be done with a switch
+	let contentType = "";
 
-    switch (file.split(".").pop()) {
-        case "svg":
-            contentType = "image/svg+xml";
-            break;
-        case "mp3":
-            contentType = "audio/mpeg";
-            break;
-        case "html":
-            contentType = "text/html; charset=UTF-8";
-            break;
-        case "css":
-            contentType = "text/css";
-            break;
-        case "js":
-            contentType = "text/javascript";
-            break;
-        case "png":
-            contentType = "image/png";
-            break;
-        case "ico":
-            contentType = "image/vnd.microsoft.icon";
-            break;
-        case "jpg":
-            contentType = "image/jpeg";
-            break;
-    }
+	switch (file.split(".").pop()) {
+		case "svg":
+			contentType = "image/svg+xml";
+			break;
+		case "mp3":
+			contentType = "audio/mpeg";
+			break;
+		case "html":
+			contentType = "text/html; charset=UTF-8";
+			break;
+		case "css":
+			contentType = "text/css";
+			break;
+		case "js":
+			contentType = "text/javascript";
+			break;
+		case "png":
+			contentType = "image/png";
+			break;
+		case "ico":
+			contentType = "image/vnd.microsoft.icon";
+			break;
+		case "jpg":
+			contentType = "image/jpeg";
+			break;
+	}
 
-    return contentType;
+	return contentType;
 }
 
 /**
@@ -165,20 +165,20 @@ export function getContentType(file: string): string {
  * @returns An array representation of the directory's contents.
  */
 export const readDirectory = (dir: string): string[] => {
-    let results: string[] = [];
-    const files = fs.readdirSync(dir);
+	let results: string[] = [];
+	const files = fs.readdirSync(dir);
 
-    for (const file of files) {
-        const filePath = path.resolve(dir, file);
-        const stat = fs.statSync(filePath);
+	for (const file of files) {
+		const filePath = path.resolve(dir, file);
+		const stat = fs.statSync(filePath);
 
-        if (stat?.isDirectory()) {
-            const res = readDirectory(filePath);
-            results = results.concat(res);
-        } else results.push(filePath);
-    }
+		if (stat?.isDirectory()) {
+			const res = readDirectory(filePath);
+			results = results.concat(res);
+		} else results.push(filePath);
+	}
 
-    return results;
+	return results;
 };
 
 /**
@@ -186,5 +186,5 @@ export const readDirectory = (dir: string): string[] => {
  * @param object The object to copy.
  */
 export function deepCopy<T>(object: T): T {
-    return JSON.parse(JSON.stringify(object));
+	return JSON.parse(JSON.stringify(object));
 }

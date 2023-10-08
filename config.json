@@ -1,28 +1,28 @@
 {
-  "host": "127.0.0.1",
-  "port": 4000,
-  "https": false,
-  "webSocketHost": "127.0.0.1",
-  "webSocketPort": 8888,
-  "webSocketHttps": false,
-  "webSocketDevAddress": "127.0.0.1:8888",
-  "useWebSocketDevAddress": true,
-  "webSocketRegions": {
-    "na": "socket.surviv.minosuko.love",
-    "eu": "socket.surviv.minosuko.love",
-    "as": "socket.surviv.minosuko.love"
-  },
-  "defaultRegion": "na",
-  "keyFile": "key.pem",
-  "certFile": "cert.pem",
+	"host": "127.0.0.1",
+	"port": 4000,
+	"https": false,
+	"webSocketHost": "127.0.0.1",
+	"webSocketPort": 8888,
+	"webSocketHttps": false,
+	"webSocketDevAddress": "127.0.0.1:8888",
+	"useWebSocketDevAddress": true,
+	"webSocketRegions": {
+		"na": "socket.surviv.minosuko.love",
+		"eu": "socket.surviv.minosuko.love",
+		"as": "socket.surviv.minosuko.love"
+	},
+	"defaultRegion": "na",
+	"keyFile": "key.pem",
+	"certFile": "cert.pem",
 
-  "movementSpeed": 0.013,
-  "botProtection": false,
-  "stopServerOnGameEnd": false,
-  "debug": {
-    "disableMapGeneration": false,
-    "fixedSpawnLocation": [],
-    "disableRedZone": false,
-    "disableStaticFileCache": true
-  }
+	"movementSpeed": 0.013,
+	"botProtection": false,
+	"stopServerOnGameEnd": false,
+	"debug": {
+		"disableMapGeneration": false,
+		"fixedSpawnLocation": [],
+		"disableRedZone": false,
+		"disableStaticFileCache": true
+	}
 }

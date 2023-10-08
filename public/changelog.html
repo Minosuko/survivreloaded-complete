@@ -1,23 +1,23 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>html, body { background: white; color: black; }</style>
-  </head>
-  <body>
-    <script>
-     try {
-       var config = JSON.parse(localStorage.getItem("surviv_config"));
-       if (config.webview) {
-         var a = document.createElement("a");
-         var text = document.createTextNode("Go back");
-         a.appendChild(document.createTextNode("Go back"));
-         a.title = "Go back";
-         a.href = "javascript:history.back()";
-         document.body.appendChild(a);
-       }
-     } catch (e) { }
-    </script>
-    <pre style="word-wrap: break-word; white-space: pre-wrap;">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>html, body { background: white; color: black; }</style>
+	</head>
+	<body>
+		<script>
+		 try {
+			 var config = JSON.parse(localStorage.getItem("surviv_config"));
+			 if (config.webview) {
+				 var a = document.createElement("a");
+				 var text = document.createTextNode("Go back");
+				 a.appendChild(document.createTextNode("Go back"));
+				 a.title = "Go back";
+				 a.href = "javascript:history.back()";
+				 document.body.appendChild(a);
+			 }
+		 } catch (e) { }
+		</script>
+		<pre style="word-wrap: break-word; white-space: pre-wrap;">
 # Surviv Reloaded #
 # Changelog
 
@@ -304,7 +304,7 @@
 
 ## [1.0.0] - November 3, 2020
 - NEW: Inferno Mode.
-- New Crates: Pyro crates will appear across the map and will spawn event items...  e.g. Flamethrower, Phoenix and Pyro perks, Foam Grenade, Nitro Lace, and yellow ammo.
+- New Crates: Pyro crates will appear across the map and will spawn event items...	e.g. Flamethrower, Phoenix and Pyro perks, Foam Grenade, Nitro Lace, and yellow ammo.
 - New Status Effect: Burning passively damages you, and lasts for 5 seconds.
 - New Weapon: Flamethrower takes yellow ammo, and shoots a stream of fire that inflicts Burning status.
 - New Item: Foam Grenades remove Burning status from players.
@@ -473,7 +473,7 @@ NOTE: To equip new gear, customize Battletag, save progress, and order Crates, p
 - Added Golden Potatoes that can be obtained through the Survivr Pass and be exchanged for Parma Crates, to get items from the previous season.
 - Added feature to sell obtained items in exchange for GP.
 - New cycling mode that enables mode rotation during weeks between main events.
-- New Emoji behaviour for mobile as an alternative: hold player avatar to bring  up the radial and drag to choose the emoji.
+- New Emoji behaviour for mobile as an alternative: hold player avatar to bring	up the radial and drag to choose the emoji.
 
 ## [0.9.1b] - Feb. 24, 2020
 - New Perk added to Savannah: Closer - allows player to throw grenades a longer distance.
@@ -502,7 +502,7 @@ NOTE: To equip new gear, customize Battletag, save progress, and order Crates, p
 - Added Aim Assist on mobile: feature turned ON by default, and can be toggled OFF on Settings.
 - Added new Auto-attack breakable objects behaviour on mobile: toggled ON/OFF on Settings.
 - Added new Sniper behaviour on mobile: fire on release.
-- Added new weapons: M134 Minigun  and M79 Grenade Launcher.
+- Added new weapons: M134 Minigun	and M79 Grenade Launcher.
 
 ## [0.9.0a] - Jan. 29, 2020
 - Minor ad changes.
@@ -1182,7 +1182,7 @@ NOTE: To equip new gear, customize Battletag, save progress, and order Crates, p
 - Added a mute toggle to the main menu in the bottom right-hand corner.
 - Added bullet casing images when firing a gun.
 - Players can no longer shoot while reloading a magazine-fed gun.
-  All other modes of interrupting a reload remain (switch weapons, stow weapons, use item, loot a new gun).
+	All other modes of interrupting a reload remain (switch weapons, stow weapons, use item, loot a new gun).
 - A message will now appear if a player is unable to loot an item (no room in pack, better item already equipped, already have that item).
 
 ### Balance
@@ -1241,6 +1241,6 @@ NOTE: To equip new gear, customize Battletag, save progress, and order Crates, p
 
 ## [0.0.1] - Oct. 6, 2017
 - Added changelog file.
-    </pre>
-  </body>
+		</pre>
+	</body>
 </html>
