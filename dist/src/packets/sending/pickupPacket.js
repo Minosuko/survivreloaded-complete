@@ -34,3 +34,4 @@ var PickupMsgType;
 	PickupMsgType[PickupMsgType["Success"] = 4] = "Success";
 	PickupMsgType[PickupMsgType["GunCannotFire"] = 5] = "GunCannotFire";
 })(PickupMsgType || (exports.PickupMsgType = PickupMsgType = {}));
+//# sourceMappingURL=pickupPacket.js.map

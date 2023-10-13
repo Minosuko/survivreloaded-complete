@@ -29,3 +29,4 @@ class RoleAnnouncementPacket extends sendingPacket_1.SendingPacket {
 	}
 }
 exports.RoleAnnouncementPacket = RoleAnnouncementPacket;
+//# sourceMappingURL=roleAnnouncementPacket.js.map

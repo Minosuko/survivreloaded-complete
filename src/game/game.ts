@@ -3,7 +3,7 @@ import { Constants, ObjectKind, DamageType, WeaponType } from "../utils/constant
 import { log, DamageRecord, type Emote, removeFrom } from "../utils/misc";
 import { Weapons, Bullets, TypeToId, Debug, RedZoneStages, Config } from "../utils/data";
 import { SurvivBitStream } from "../utils/survivBitStream";
-import { random, sameLayer, vecLerp, lerp, distanceBetween, randomPointInsideCircle } from "../utils/math";
+import { random, sameLayer, vecLerp, lerp, distanceBetween, randomPointInsideCircle, normalizeAngle  } from "../utils/math";
 import { Map } from "./map";
 import { type Gun, Player } from "./objects/player";
 import { AliveCountsPacket } from "../packets/sending/aliveCountsPacket";
@@ -19,7 +19,7 @@ import { Bullet } from "./bullet";
 import { Explosion } from "./explosion";
 import { type Stair } from "./stair";
 import { Building } from "./objects/building";
-import { type Obstacle } from "./objects/obstacle";
+import { Obstacle } from "./objects/obstacle";
 import { type Projectile } from "./objects/projectile";
 
 export class Game {
@@ -222,12 +222,39 @@ export class Game {
 				if (bulletData.onHit) {
 					this.explosions.add(new Explosion(bullet.body.getPosition(), bulletData.onHit, bullet.layer, bullet.shooter, bullet.shotSource));
 				}
-
+					
 				if (damageRecord.damaged.damageable) {
 					if (damageRecord.damaged instanceof Player) {
 						damageRecord.damaged.damage(bulletData.damage, damageRecord.damager, bullet.shotSource);
 					} else {
 						damageRecord.damaged.damage(bulletData.damage * bulletData.obstacleDamage, damageRecord.damager);
+					}
+				}
+				if (damageRecord.damaged instanceof Obstacle) {
+					if(damageRecord.damaged.reflectBullets){
+						if(bullet.reflectCount < 2){
+							const bulletDir = bullet.direction;
+							const NewPos = bullet.body.getPosition();
+							const direction = Vec2(-bulletDir.x, -bulletDir.y);
+
+							const bullet2 = new Bullet(
+								damageRecord.damager,
+								NewPos,
+								direction,
+								bullet.typeString,
+								damageRecord.damager.activeWeapon as Gun,
+								false,
+								bullet.layer,
+								damageRecord.damager.game
+							);
+							bullet2.reflectCount = bullet.reflectCount + 1;
+							damageRecord.damager.game.bullets.add(bullet2);
+							damageRecord.damager.game.newBullets.add(bullet2);
+						}
+						if(bullet.reflectCount == 2){
+							this.world.destroyBody(bullet.body);
+							this.bullets.delete(bullet);
+						}
 					}
 				}
 				this.world.destroyBody(bullet.body);

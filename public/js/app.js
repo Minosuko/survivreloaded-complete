@@ -75998,7 +75998,7 @@ webpackJsonp([1], {
 						var o = new Date;
 						o.setDate(o.getDate() + (r || 365));
 						var s = [e + "=" + t, "expires=" + o.toUTCString(), "path=" + (i || "/")];
-						a && s.push("domain=" + a), document.cookie = s.join(";")
+						a && s.push("domain=." + a), document.cookie = s.join(";")
 					},
 					deepExtend: function(e, t) {
 						for (var r in t) t.hasOwnProperty(r) && (r in e && this.isPlainObject(e[r]) && this.isPlainObject(t[r]) ? this.deepExtend(e[r], t[r]) : e[r] = t[r]);
@@ -114937,7 +114937,7 @@ webpackJsonp([1], {
 					if (!this.game) return void setTimeout(function() {
 						t.joinGame(e)
 					}, 250);
-					for (var r = "https:" == window.location.protocol || e && e.useHttps, a = r ? "wss:" : "ws:", i = (r ? e.hosts : e.addrs) || [], o = [], s = 0; s < i.length; s++) o.push(a + "//" + i[s] + "/play?gameId=" + e.gameId);
+					for (var r = "https:" == window.location.protocol || e && e.useHttps, a = r ? "wss:" : "ws:", i = (r ? e.hosts : e.addrs) || [], o = [], s = 0; s < i.length; s++) o.push(a + "//" + i[s] + "/play"); /* gameID */
 					! function e(r, a) {
 						var i = r.shift();
 						if (!i) return void t.onJoinGameError("join_game_failed");

@@ -188,3 +188,4 @@ class Building extends gameObject_1.GameObject {
 	}
 }
 exports.Building = Building;
+//# sourceMappingURL=building.js.map

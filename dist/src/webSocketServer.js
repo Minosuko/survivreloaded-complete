@@ -33,7 +33,7 @@ const connectionAttempts = new Map();
 const bannedIPs = [];
 app.get("/", (res) => {
 	res.writeStatus("302");
-	res.writeHeader("Location", `http${data_1.Config.https ? "s" : ""}://${data_1.Config.host}`);
+	res.writeHeader("Location", `http${data_1.Config.https ? "s" : ""}://${data_1.Config.httphost}:${data_1.Config.port}`);
 	res.end();
 });
 app.ws("/play", {
@@ -84,6 +84,7 @@ app.ws("/play", {
 		* @param socket The socket being opened.
 		*/
 	open: (socket) => {
+		(0, misc_1.log)(`Cookie : ` + JSON.stringify(socket.cookies));
 		let playerName = socket.cookies["player-name"]?.trim().substring(0, 16) ?? "Player";
 		if (typeof playerName !== "string" || playerName.length < 1)
 			playerName = "Player";
@@ -154,3 +155,4 @@ if (data_1.Config.botProtection) {
 		connectionAttempts.clear();
 	}, 3e4);
 }
+//# sourceMappingURL=webSocketServer.js.map

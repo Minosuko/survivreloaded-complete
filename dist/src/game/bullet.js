@@ -30,7 +30,7 @@ class Bullet {
 	shotSource;
 	shotOffhand = false;
 	lastShot = false;
-	reflect = false;
+	reflect = true;
 	reflectCount = 0;
 	reflectObjId;
 	splinter = false;
@@ -56,7 +56,7 @@ class Bullet {
 		this.body = game.world.createBody({
 			type: "dynamic",
 			position,
-			fixedRotation: true,
+			fixedRotation: false,
 			bullet: true
 		});
 		this.body.createFixture({
@@ -81,3 +81,4 @@ class Bullet {
 	}
 }
 exports.Bullet = Bullet;
+//# sourceMappingURL=bullet.js.map

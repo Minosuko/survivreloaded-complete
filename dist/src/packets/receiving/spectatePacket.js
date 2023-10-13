@@ -13,3 +13,4 @@ class SpectatePacket extends receivingPacket_1.ReceivingPacket {
 	}
 }
 exports.SpectatePacket = SpectatePacket;
+//# sourceMappingURL=spectatePacket.js.map

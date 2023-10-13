@@ -22,6 +22,7 @@ const loot_1 = require("./objects/loot");
 const bullet_1 = require("./bullet");
 const explosion_1 = require("./explosion");
 const building_1 = require("./objects/building");
+const obstacle_1 = require("./objects/obstacle");
 class Game {
 	id; // The game ID. 16 hex characters, same as MD5
 	map;
@@ -205,6 +206,23 @@ class Game {
 					}
 					else {
 						damageRecord.damaged.damage(bulletData.damage * bulletData.obstacleDamage, damageRecord.damager);
+					}
+				}
+				if (damageRecord.damaged instanceof obstacle_1.Obstacle) {
+					if (damageRecord.damaged.reflectBullets) {
+						if (bullet.reflectCount < 2) {
+							const bulletDir = bullet.direction;
+							const NewPos = bullet.body.getPosition();
+							const direction = (0, planck_1.Vec2)(-bulletDir.x, -bulletDir.y);
+							const bullet2 = new bullet_1.Bullet(damageRecord.damager, NewPos, direction, bullet.typeString, damageRecord.damager.activeWeapon, false, bullet.layer, damageRecord.damager.game);
+							bullet2.reflectCount = bullet.reflectCount + 1;
+							damageRecord.damager.game.bullets.add(bullet2);
+							damageRecord.damager.game.newBullets.add(bullet2);
+						}
+						if (bullet.reflectCount == 2) {
+							this.world.destroyBody(bullet.body);
+							this.bullets.delete(bullet);
+						}
 					}
 				}
 				this.world.destroyBody(bullet.body);
@@ -702,3 +720,4 @@ class Game {
 	}
 }
 exports.Game = Game;
+//# sourceMappingURL=game.js.map

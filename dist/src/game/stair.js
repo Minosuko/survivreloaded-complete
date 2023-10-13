@@ -32,3 +32,4 @@ class Stair {
 	}
 }
 exports.Stair = Stair;
+//# sourceMappingURL=stair.js.map

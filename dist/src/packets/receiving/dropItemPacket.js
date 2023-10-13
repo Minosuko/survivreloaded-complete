@@ -31,3 +31,4 @@ class DropItemPacket extends receivingPacket_1.ReceivingPacket {
 	}
 }
 exports.DropItemPacket = DropItemPacket;
+//# sourceMappingURL=dropItemPacket.js.map

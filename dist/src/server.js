@@ -88,7 +88,7 @@ app.post("/api/find_game", res => {
 	(0, misc_1.readPostedJSON)(res, (body) => {
 		const addr = data_1.Config.useWebSocketDevAddress ? data_1.Config.webSocketDevAddress : (data_1.Config.webSocketRegions[body?.region] ?? data_1.Config.webSocketRegions[data_1.Config.defaultRegion]);
 		res.writeHeader("Content-Type", "application/json");
-		res.end(JSON.stringify({ res: [{ zone: body.zones[0], gameId: "", useHttps: data_1.Config.https, hosts: [addr], addrs: [addr] }] }));
+		res.end(JSON.stringify({ res: [{ zone: body.zones[0], gameId: "LunarSurviv", useHttps: data_1.Config.https, hosts: [addr], addrs: [addr] }] }));
 	}, () => {
 		(0, misc_1.log)("/api/find_game: Error retrieving body");
 	});

@@ -18,3 +18,4 @@ class AliveCountsPacket extends sendingPacket_1.SendingPacket {
 	}
 }
 exports.AliveCountsPacket = AliveCountsPacket;
+//# sourceMappingURL=aliveCountsPacket.js.map

@@ -91,3 +91,4 @@ for (let i = 0; i < config.botCount; i++) {
 		}, 2000);
 	}, config.joinDelay * i);
 }
+//# sourceMappingURL=stressTest.js.map

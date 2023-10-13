@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.lerp = exports.vecLerp = exports.randomPointInsideCircle = exports.degreesToRadians = exports.vec2Rotate = exports.unitVecToRadians = exports.bodyFromCollisionData = exports.angleBetween = exports.splitRect = exports.orientationToRad = exports.rotateRect = exports.addAdjust = exports.addOrientations = exports.objectCollision = exports.distanceToRect = exports.distanceToCircle = exports.rectRectCollision = exports.clamp = exports.rectCollision = exports.circleCollision = exports.distanceBetween = exports.randomBoolean = exports.weightedRandom = exports.randomVec = exports.random = exports.randomFloatSpecial = exports.randomFloat = exports.toStairsLayer = exports.toGroundLayer = exports.sameLayer = void 0;
+exports.absMod = exports.normalizeAngle = exports.lerp = exports.vecLerp = exports.randomPointInsideCircle = exports.degreesToRadians = exports.vec2Rotate = exports.unitVecToRadians = exports.bodyFromCollisionData = exports.angleBetween = exports.splitRect = exports.orientationToRad = exports.rotateRect = exports.addAdjust = exports.addOrientations = exports.objectCollision = exports.distanceToRect = exports.distanceToCircle = exports.rectRectCollision = exports.clamp = exports.rectCollision = exports.circleCollision = exports.distanceBetween = exports.randomBoolean = exports.weightedRandom = exports.randomVec = exports.random = exports.randomFloatSpecial = exports.randomFloat = exports.toStairsLayer = exports.toGroundLayer = exports.sameLayer = void 0;
 const planck_1 = require("planck");
 const constants_1 = require("./constants");
 const obstacle_1 = require("../game/objects/obstacle");
@@ -376,3 +376,14 @@ function lerp(t, a, b) {
 	return a * (1.0 - t) + b * t;
 }
 exports.lerp = lerp;
+// addtional helper function
+function normalizeAngle(radians) {
+	const π = Math.PI;
+	return absMod(radians - π, 2 * π) - π;
+}
+exports.normalizeAngle = normalizeAngle;
+function absMod(a, n) {
+	return a >= 0 ? a % n : (a % n + n) % n;
+}
+exports.absMod = absMod;
+//# sourceMappingURL=math.js.map

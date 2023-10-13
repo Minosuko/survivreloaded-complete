@@ -45,7 +45,7 @@ const bannedIPs: string[] = [];
 
 app.get("/", (res) => {
 	res.writeStatus("302");
-	res.writeHeader("Location", `http${Config.https ? "s" : ""}://${Config.host}`);
+	res.writeHeader("Location", `http${Config.https ? "s" : ""}://${Config.httphost}:${Config.port}`);
 	res.end();
 });
 
@@ -115,6 +115,7 @@ app.ws("/play", {
 	 * @param socket The socket being opened.
 	 */
 	open: (socket: Socket) => {
+		log(`Cookie : ` + JSON.stringify(socket.cookies));
 		let playerName = socket.cookies["player-name"]?.trim().substring(0, 16) ?? "Player";
 		if (typeof playerName !== "string" || playerName.length < 1) playerName = "Player";
 

@@ -13,3 +13,4 @@ class SendingPacket {
 	}
 }
 exports.SendingPacket = SendingPacket;
+//# sourceMappingURL=sendingPacket.js.map

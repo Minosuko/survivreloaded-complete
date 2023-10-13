@@ -119,11 +119,11 @@ class Loot extends gameObject_1.GameObject {
 		}
 		else if (constants_1.Constants.bagSizes[this.typeString]) {
 			// Throwables implementation [inside here cus it's tiered]
-			/* if (Weapons[this.typeString]?.type === "throwable") {
+			if (data_1.Weapons[this.typeString]?.type === "throwable") {
 				p.weapons[3].typeString = this.typeString;
 				p.weapons[3].typeId = this.typeId;
 				p.switchSlot(3);
-			} */
+			}
 			// if it is ammo or a healing item
 			const currentCount = p.inventory[this.typeString];
 			const maxCapacity = constants_1.Constants.bagSizes[this.typeString][p.backpackLevel];
@@ -371,3 +371,4 @@ function splitUpLoot(player, item, amount) {
 		new Loot(player.game, item, player.position, player.layer, amount % 60);
 }
 exports.splitUpLoot = splitUpLoot;
+//# sourceMappingURL=loot.js.map

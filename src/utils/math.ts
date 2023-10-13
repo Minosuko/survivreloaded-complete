@@ -381,3 +381,11 @@ export function vecLerp(t: number, a: Vec2, b: Vec2): Vec2 {
 export function lerp(t: number, a: number, b: number): number {
 	return a * (1.0 - t) + b * t;
 }
+// addtional helper function
+export function normalizeAngle(radians: number): number {
+	const π = Math.PI;
+	return absMod(radians - π, 2 * π) - π;
+}
+export function absMod(a: number, n: number): number {
+    return a >= 0 ? a % n : (a % n + n) % n;
+}

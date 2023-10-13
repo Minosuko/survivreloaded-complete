@@ -30,3 +30,4 @@ class KillPacket extends sendingPacket_1.SendingPacket {
 	}
 }
 exports.KillPacket = KillPacket;
+//# sourceMappingURL=killPacket.js.map

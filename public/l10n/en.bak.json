@@ -1,4 +1,3 @@
-
 {
     "word-order": "svo",
 
@@ -36,14 +35,11 @@
     
     "index-slogan": "2d Battle Royale",
     "index-region": "Region",
-    "index-north-america": "North America",
-    "index-europe": "Europe",
-    "index-asia": "Asia",
-    "index-south-america": "South America",
+    "index-north-america": "Viet Nam",
+    "index-europe": "Singapore",
+    "index-asia": "Development server",
+    "index-south-america": "Hong Kong",
     "index-korea": "South Korea",
-    "index-vietnam": "Viet Nam",
-    "index-hongkong": "Hong Kong",
-    "index-singapore": "Singapore",
     "index-players": "players",
     "index-play-solo": "Play Solo",
     "index-play-duo": "Play Duo",
@@ -1157,10 +1153,10 @@
     "game-xp_book_greene": "Greene's Infinite Wisdom",
     "game-xp_book_parma": "The PARMA Papers",
     "game-xp_book_nevelskoy": "The Nevelskoy Report",
-    "game-xp_book_rinzo": "RinzÅ's Log",
-    "game-xp_book_kuga": "Memoirs of Kuga KairyÅ«",
+    "game-xp_book_rinzo": "Rinzō's Log",
+    "game-xp_book_kuga": "Memoirs of Kuga Kairyū",
     "game-xp_glasses": "Lenz's Spectacles",
-    "game-xp_compass": "AmÃ©lie's True Compass",
+    "game-xp_compass": "Amélie's True Compass",
     "game-xp_stump": "Ravenstone's Bloody Stump",
     "game-xp_bone": "Bone of Gordon",
     "game-xp_donut": "Cake Donut",
@@ -1198,7 +1194,7 @@
     "lock-event-btn-text": "Thanks!",
    
     "event-freenemies-start-title": "FRENEMIES",
-    "event-freenemies-start-desc": "Love is in the air, a time to set aside differences. Enter the Heart Gun, a weapon which reduces the damage you take from your frenemy for 20 seconds. For a more explosive effect, we also have added the Heart Grenade to pacify a group all at once. Itâ€™s every reason to save up Boxes of Chocolate, the one guard you have against Heart weapons. You never know what you are going to get...in crates.",
+    "event-freenemies-start-desc": "Love is in the air, a time to set aside differences. Enter the Heart Gun, a weapon which reduces the damage you take from your frenemy for 20 seconds. For a more explosive effect, we also have added the Heart Grenade to pacify a group all at once. It’s every reason to save up Boxes of Chocolate, the one guard you have against Heart weapons. You never know what you are going to get...in crates.",
 
     "event-freenemies-end-title": "FRENEMIES ENDING SOON",
     "event-freenemies-end-desc" : "Our Frenemies event ends on 2/17 at 9 am PST. This is your last chance for Heart Grenades, Heart cannon, and Box of Chocolates.",
@@ -1210,10 +1206,10 @@
     "event-savannah-end-desc": "Our Savannah event ends on 3/2 at 9 am PST. This is your last chance for the Closer perk.",
 
     "event-st-patrick-start-title": "CLOVER FIELD",
-    "event-st-patrick-start-desc": "Are you feeling lucky? St. Patrickâ€™s day has brought rainbow blasters to dole out a single instant death, and growlers to escape it. The luckiest few will don the Leprechaun perk, to teleport away when death is nigh. Check shamrock bushes and barrels for the above goodies.",
+    "event-st-patrick-start-desc": "Are you feeling lucky? St. Patrick’s day has brought rainbow blasters to dole out a single instant death, and growlers to escape it. The luckiest few will don the Leprechaun perk, to teleport away when death is nigh. Check shamrock bushes and barrels for the above goodies.",
 
     "event-st-patrick-end-title": "CLOVER FIELD ENDING SOON",
-    "event-st-patrick-end-desc": " Our St. Patrickâ€™s event ends on 3/18 at 1 pm PST. This is your last chance for the growler, Leprechaun and rainbow blasters.",
+    "event-st-patrick-end-desc": " Our St. Patrick’s event ends on 3/18 at 1 pm PST. This is your last chance for the growler, Leprechaun and rainbow blasters.",
 
     "event-awesome-blossoms-start-title": "AWESOME BLOSSOMS",
     "event-awesome-blossoms-start-desc": "Spring has sprung and so have the Island cherry trees! The flowering season brings with it a building: the teahouse. This cozy piece of Japanese-inspired architecture features a golden chest that may contain a fun surprise or two.",
@@ -1261,7 +1257,7 @@
 
 
     "event-ultimate-sacrifice-start-title": "ULTIMATE SACRIFICE",
-    "event-ultimate-sacrifice-start-desc": "This week we honor the countless men and women whoâ€™ve fallen defending their nations, with a weeklong 50v50. Commanders who die now drop protective shields on death and summon airdrops. The river beds also have a surprise. May the heroes of history inspire you to comparable acts of courage and sacrifice",
+    "event-ultimate-sacrifice-start-desc": "This week we honor the countless men and women who’ve fallen defending their nations, with a weeklong 50v50. Commanders who die now drop protective shields on death and summon airdrops. The river beds also have a surprise. May the heroes of history inspire you to comparable acts of courage and sacrifice",
     "event-ultimate-sacrifice-end-title": "ULTIMATE SACRIFICE ENDING SOON",
     "event-ultimate-sacrifice-end-desc": "Our Ultimate Sacrifice event ends on 5/25 at 1 pm PST. This is your last chance to experience the new Commander features.",
 
@@ -1438,7 +1434,7 @@
     "game-motherShip_cannon_shot": "Mothrship",
     "item-source-exclusive-offers": "Exclusive offers",
     "event-contact-start-title": "CONTACT MODE",
-    "event-contact-start-desc": "Experiments in spacetime folding have been partially successful. Wormhole probes recently brought back data from deep space, but also brought new guests to the island. Mothrships have begun to appear â€“ often dropping hosts of Skittrs, and eggs containing alien technology. Survivrs are encouraged to continue wargames, but avoid contact at all costs... a cure to Skittr infection has not yet been found.",
+    "event-contact-start-desc": "Experiments in spacetime folding have been partially successful. Wormhole probes recently brought back data from deep space, but also brought new guests to the island. Mothrships have begun to appear – often dropping hosts of Skittrs, and eggs containing alien technology. Survivrs are encouraged to continue wargames, but avoid contact at all costs... a cure to Skittr infection has not yet been found.",
     "event-contact-end-title": "Contact Event Ending Soon!",
     "event-contact-end-desc": "Our Contact event ends on 07/20 at 1 pm PST. This is your last chance to experience the Contact mode.",
 
@@ -1451,7 +1447,7 @@
     "offer-not-enough-gp": "Not enough GP",
 
     "modal-account-desc-1" :"Customize Battletag, and save progress cross-device.",
-    "modal-account-desc-2" :"Equip the Gear youÂ´ve earned, or sell it for more GP.",
+    "modal-account-desc-2" :"Equip the Gear you´ve earned, or sell it for more GP.",
     "modal-account-desc-3" :"Open Crates for epic new loot.",
 
     "quest-refresh-prompt": "Get a new mission?",
@@ -1497,7 +1493,7 @@
     "game-phoenix": "Phoenix",
     "game-phoenix-desc": " User heals slowly from fire, lava, or burning effect, but takes damage at the same rate while out of it.",
     "game-pyro": "Pyro",
-    "game-pyro-desc": "Increases range and damage of userâ€™s fire weapons by ~20%.",
+    "game-pyro-desc": "Increases range and damage of user’s fire weapons by ~20%.",
 
     "game-m9A17": "Flamethrower",
     "game_m9A17": "Flamethrower",
@@ -1565,8 +1561,8 @@
     "market-type-boost": "Boost",
     "market-type-deathEffect": "Death E.",
 
-    "market-mode-highlow": "High â†’ Low",
-    "market-mode-lowhigh": "Low â†’ High",
+    "market-mode-highlow": "High → Low",
+    "market-mode-lowhigh": "Low → High",
 
     "market-sort-price": "Price",
     "market-sort-item": "Item",
@@ -1582,7 +1578,7 @@
     "market-timer-expired": "EXPIRED",
 
     "market-modal-title-sell-item": "List Item for Sale",
-    "market-sell-explanation": "Listing an item costs 50 GP, and lasts 24 hours. If someone buys your item before the listing expires, youâ€™ll earn the sale price minus a 5% market fee. Otherwise, your item will be returned.",
+    "market-sell-explanation": "Listing an item costs 50 GP, and lasts 24 hours. If someone buys your item before the listing expires, you’ll earn the sale price minus a 5% market fee. Otherwise, your item will be returned.",
     "market-sell-item-for": "Sell item for:",
     "market-input-price-placeholder":"CLICK TO ENTER GP AMOUNT",
     "market-modal-min-price": "MIN PRICE:",
@@ -1648,7 +1644,7 @@
     "ftue-title-1":"Your goal is to surviv...",
     "ftue-title-2":"Finish Missions to Level Up...",
 
-    "ftue-inst-1":"Click Battle to start your first match. â€œClassicâ€ is the game mode, and â€œSoloâ€ Means youâ€™ll play without a team.",
+    "ftue-inst-1":"Click Battle to start your first match. “Classic” is the game mode, and “Solo” Means you’ll play without a team.",
     "ftue-inst-2":"Move with WASD, aim and punch/shoot with the mouse.",
     "ftue-inst-3":"Grab items you find. Break Crates or kill enemies for items.",
     "ftue-inst-4":"Equip and Use your guns/items with the buttons on the right.",
@@ -1710,7 +1706,7 @@
     "modal-banned-forever": "FOREVER",
     "modal-banned-count-txt": "Ban time remaining: ",
     "modal-banned-slug-txt": "Current battletag ID: ",
-    "modal-banned-final-txt": "For now, if youâ€™d like to play on Trainee Island, you may log out from Prestige Island and come back later.",
+    "modal-banned-final-txt": "For now, if you’d like to play on Trainee Island, you may log out from Prestige Island and come back later.",
 
     "loadout-yin-yang": "Yin Yang",
     "game-outfitYinYang": "Yin Yang",
@@ -1859,8 +1855,8 @@
     "game-outfitBraaains":"Braaains",
     "loadout-braaains":"Braaains",
 
-    "game-outfitStumpd":"StumpdÂ´",
-    "loadout-stumpd":"StumpdÂ´",
+    "game-outfitStumpd":"Stumpd´",
+    "loadout-stumpd":"Stumpd´",
 
     "game-outfitDigiturt":"Digiturt",
     "loadout-digiturt":"Digiturt",
@@ -1922,7 +1918,7 @@
     "game-fist_theotherpong":"The Other Pong",
     "loadout-the-other-pong":"The Other Pong",
 
-    "loadout-new-deaths-eve":"New DeathÂ´s Eve",
+    "loadout-new-deaths-eve":"New Death´s Eve",
 
     "loadout-cheese-bomb":"Cheese Bomb",
 
@@ -1974,8 +1970,8 @@
     "loadout-scarween":"Scarween",
     "game-outfitSwords":"Swords",
     "loadout-swords":"Swords",
-    "game-outfitCatchemOl":"Catchâ€™em Ol!",
-    "loadout-catchem-ol":"Catchâ€™em Ol!",
+    "game-outfitCatchemOl":"Catch’em Ol!",
+    "loadout-catchem-ol":"Catch’em Ol!",
     "game-outfitSoapPods":"Soap Pods",
     "loadout-soap-pods":"Soap Pods",
     "game-outfitHopelessRamen-tic":"Hopeless Ramen-tic",
@@ -2137,8 +2133,8 @@
     "index-join-success":"Join Succesful",
     "index-edit-clan":"Edit Clan",
     "index-delete-msg":"Enter \"DELETE\" to delete this clan:",
-    "index-delete-clan-warnimg":"(This action cannot be undone. You wonâ€™t be able to access this clan anymore)",
-    "index-leave-clan-warnimg":"(This action cannot be undone. You wonâ€™t be able to re-join this clan unless youâ€™re re-invited)",
+    "index-delete-clan-warnimg":"(This action cannot be undone. You won’t be able to access this clan anymore)",
+    "index-leave-clan-warnimg":"(This action cannot be undone. You won’t be able to re-join this clan unless you’re re-invited)",
     "index-kg":"K/G",
     "index-slots":"Slots",
     "index-sort-by":"Sort By",
@@ -2151,7 +2147,7 @@
     "ONE-TIME-BOUGHT": "ONE TIME OFFER",
     "ONE-TIME-BOUGHT-description": "This exclusive skin is only available right here, right now!",
     "ONE-TIME-BOUGHT-discount": "80% OFF",
-    "btn-decline-exclusive-offer-special": "Iâ€™m not interested",
+    "btn-decline-exclusive-offer-special": "I’m not interested",
     "btn-remind-exclusive-offer-special": "Remind me later",
     "index-support-ukrainians-description" : "All item sales during the week will be donated to support Ukrainians",
     "index-support-ukrainians" : "STAND WITH UKRAINE",
@@ -2166,7 +2162,7 @@
     "index-update-msg":"Changes saved!",
     "index-update":"Success",
     "index-failure": "Failure",
-    "index-failure-message": "Your clan couldnâ€™t be created due to an internal error :(",
+    "index-failure-message": "Your clan couldn’t be created due to an internal error :(",
     "index-failure-btn": "Try Again",
     "index-not-found": "Not Found",
     "index-not-found-message": "Clan code not found",
@@ -2316,10 +2312,10 @@
     "index-tournament-notification-description":"The competition is over! Your rewards are already in your account.",
     "index-leave-clan": "LEAVE CLAN & COMPETITION",
     "index-leave-msg":"Enter \"LEAVE\" to leave this CLAN & COMPETITION:",
-    "index-warning":"WARNING: If you leave your clan now you wonâ€™t be able to collect the clan rewards. If you are the last member, the clan will be deleted.",
-    "index-join-success-msg":"You joined {clan} successfully, but you wonâ€™t be able to participate in the clan competition until the next cycle!",
+    "index-warning":"WARNING: If you leave your clan now you won’t be able to collect the clan rewards. If you are the last member, the clan will be deleted.",
+    "index-join-success-msg":"You joined {clan} successfully, but you won’t be able to participate in the clan competition until the next cycle!",
     "index-tournament-counter":"Current Competition Ends in",
-    "index-clan-current-rank":"Clanâ€™s Current Rank:",
+    "index-clan-current-rank":"Clan’s Current Rank:",
     "index-rewards":"Rewards",
     "index-tournament":"Competitions",
     "index-tournament-info": "Rewards are given automatically to player wallets once the competition is over. New Clans will not participate until the next competition starts, and players that join a Clan during an ongoing competition will not count towards the competition stats, and will not receive the rewards.",

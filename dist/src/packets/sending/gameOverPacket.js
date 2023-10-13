@@ -28,3 +28,4 @@ class GameOverPacket extends sendingPacket_1.SendingPacket {
 	}
 }
 exports.GameOverPacket = GameOverPacket;
+//# sourceMappingURL=gameOverPacket.js.map

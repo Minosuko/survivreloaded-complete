@@ -450,3 +450,4 @@ class Obstacle extends gameObject_1.GameObject {
 	}
 }
 exports.Obstacle = Obstacle;
+//# sourceMappingURL=obstacle.js.map

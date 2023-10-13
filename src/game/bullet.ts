@@ -42,7 +42,7 @@ export class Bullet {
 	shotOffhand = false;
 	lastShot = false;
 
-	reflect = false;
+	reflect = true;
 	reflectCount = 0;
 	reflectObjId: number;
 
@@ -80,7 +80,7 @@ export class Bullet {
 		this.body = game.world.createBody({
 			type: "dynamic",
 			position,
-			fixedRotation: true,
+			fixedRotation: false,
 			bullet: true
 		});
 		this.body.createFixture({
