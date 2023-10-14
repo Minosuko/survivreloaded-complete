@@ -1,5 +1,10 @@
 # survivreloaded-complete
  Working on performance improvement and add missing feature
-Original: https://github.com/HasangerGames/survivreloaded-server
+ 
+ Original: https://github.com/HasangerGames/survivreloaded-server
 # Start
-just "npm run dev"
+
+just
+```npm run build```
+
+```npm start```

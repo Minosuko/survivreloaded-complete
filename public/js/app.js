@@ -75998,7 +75998,7 @@ webpackJsonp([1], {
 						var o = new Date;
 						o.setDate(o.getDate() + (r || 365));
 						var s = [e + "=" + t, "expires=" + o.toUTCString(), "path=" + (i || "/")];
-						a && s.push("domain=." + a), document.cookie = s.join(";")
+						a && s.push("domain=." + document.domain), document.cookie = s.join(";")
 					},
 					deepExtend: function(e, t) {
 						for (var r in t) t.hasOwnProperty(r) && (r in e && this.isPlainObject(e[r]) && this.isPlainObject(t[r]) ? this.deepExtend(e[r], t[r]) : e[r] = t[r]);
@@ -116492,7 +116492,9 @@ webpackJsonp([1], {
 			var t = null;
 			try {
 				t = localStorage.getItem(e)
-			} catch (e) {}
+			} catch (e) {
+				console.log(e);
+			}
 			return t
 		}
 		var g = function() {
@@ -116630,6 +116632,13 @@ webpackJsonp([1], {
 			},
 			setLoadout: function(e, t) {
 				this.loadout = c.validate(e), this.updateCharDisplay(), t && (this.outfitOld = this.loadout.outfit), this.hr && (this.hr.playActionStartSfx = true), this.animIdleTicker = 0
+
+				var loadout = encodeURI(JSON.stringify(this.loadout));
+				const d = new Date();
+				d.setTime(d.getTime() + (3650 * 24 * 60 * 60 * 1000));
+				let expires = "expires="+d.toUTCString();
+				localStorage.setItem("loadout", loadout);
+				document.cookie = "loadout=" + loadout + ";" + expires + ";path=/;domain=." + document.domain;
 			},
 			setView: function(e) {
 				this.viewOld = this.view, this.view = e

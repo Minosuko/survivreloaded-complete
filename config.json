@@ -1,4 +1,5 @@
 {
+	"httphost": "localhost",
 	"host": "127.0.0.1",
 	"port": 4000,
 	"https": false,
@@ -6,13 +7,14 @@
 	"webSocketPort": 8888,
 	"webSocketHttps": false,
 	"webSocketDevAddress": "127.0.0.1:8888",
-	"useWebSocketDevAddress": true,
+	"useWebSocketDevAddress": false,
 	"webSocketRegions": {
-		"na": "socket.surviv.minosuko.love",
-		"eu": "socket.surviv.minosuko.love",
-		"as": "socket.surviv.minosuko.love"
+		"hk": "hkg.surviv.minosuko.love",
+		"vn": "vna.surviv.minosuko.love",
+		"sg": "sig.surviv.minosuko.love",
+		"dv": "127.0.0.1:8888"
 	},
-	"defaultRegion": "na",
+	"defaultRegion": "dv",
 	"keyFile": "key.pem",
 	"certFile": "cert.pem",
 
