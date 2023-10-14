@@ -4,15 +4,15 @@
 	"port": 4000,
 	"https": false,
 	"webSocketHost": "127.0.0.1",
-	"webSocketPort": 8888,
+	"webSocketPort": 4001,
 	"webSocketHttps": false,
-	"webSocketDevAddress": "127.0.0.1:8888",
+	"webSocketDevAddress": "127.0.0.1:4001",
 	"useWebSocketDevAddress": false,
 	"webSocketRegions": {
 		"hk": "hkg.surviv.minosuko.love",
 		"vn": "vna.surviv.minosuko.love",
 		"sg": "sig.surviv.minosuko.love",
-		"dv": "127.0.0.1:8888"
+		"dv": "127.0.0.1:4001"
 	},
 	"defaultRegion": "dv",
 	"keyFile": "key.pem",
