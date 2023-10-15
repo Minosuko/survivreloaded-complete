@@ -1157,4 +1157,3 @@ class Player extends gameObject_1.GameObject {
 	}
 }
 exports.Player = Player;
-//# sourceMappingURL=player.js.map

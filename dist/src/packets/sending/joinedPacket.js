@@ -19,4 +19,3 @@ class JoinedPacket extends sendingPacket_1.SendingPacket {
 	}
 }
 exports.JoinedPacket = JoinedPacket;
-//# sourceMappingURL=joinedPacket.js.map

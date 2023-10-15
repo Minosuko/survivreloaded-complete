@@ -81,4 +81,3 @@ class Bullet {
 	}
 }
 exports.Bullet = Bullet;
-//# sourceMappingURL=bullet.js.map

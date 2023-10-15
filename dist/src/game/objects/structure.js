@@ -27,4 +27,3 @@ class Structure extends gameObject_1.GameObject {
 	damage(amount, source) { }
 }
 exports.Structure = Structure;
-//# sourceMappingURL=structure.js.map

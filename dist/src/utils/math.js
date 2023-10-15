@@ -386,4 +386,3 @@ function absMod(a, n) {
 	return a >= 0 ? a % n : (a % n + n) % n;
 }
 exports.absMod = absMod;
-//# sourceMappingURL=math.js.map

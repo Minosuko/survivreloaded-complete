@@ -353,4 +353,3 @@ var CollisionCategory;
 	CollisionCategory[CollisionCategory["Loot"] = 8] = "Loot";
 	CollisionCategory[CollisionCategory["Other"] = 16] = "Other";
 })(CollisionCategory || (exports.CollisionCategory = CollisionCategory = {}));
-//# sourceMappingURL=constants.js.map

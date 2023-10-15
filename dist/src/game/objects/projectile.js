@@ -79,4 +79,3 @@ class Projectile extends gameObject_1.GameObject {
 	damage(amount, source) { }
 }
 exports.Projectile = Projectile;
-//# sourceMappingURL=projectile.js.map

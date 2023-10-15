@@ -655,4 +655,3 @@ class GroundPatch {
 		this.useAsMapShape = useAsMapShape; // boolean (1 bit)
 	}
 }
-//# sourceMappingURL=map.js.map

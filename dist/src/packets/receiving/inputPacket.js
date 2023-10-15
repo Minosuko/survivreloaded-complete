@@ -210,4 +210,3 @@ class InputPacket extends receivingPacket_1.ReceivingPacket {
 	}
 }
 exports.InputPacket = InputPacket;
-//# sourceMappingURL=inputPacket.js.map

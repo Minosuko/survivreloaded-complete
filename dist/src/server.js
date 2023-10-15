@@ -164,4 +164,3 @@ app.listen(data_1.Config.host, data_1.Config.port, () => {
 	(0, misc_1.log)("WebSocket server is starting...");
 	spawnWebSocketProcess();
 });
-//# sourceMappingURL=server.js.map

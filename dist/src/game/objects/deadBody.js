@@ -21,4 +21,3 @@ class DeadBody extends gameObject_1.GameObject {
 	damage(amount, source) { }
 }
 exports.DeadBody = DeadBody;
-//# sourceMappingURL=deadBody.js.map

@@ -26,4 +26,3 @@ class Decal extends gameObject_1.GameObject {
 	damage(amount, source) { }
 }
 exports.Decal = Decal;
-//# sourceMappingURL=decal.js.map

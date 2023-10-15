@@ -210,18 +210,23 @@ class Game {
 				}
 				if (damageRecord.damaged instanceof obstacle_1.Obstacle) {
 					if (damageRecord.damaged.reflectBullets) {
-						if (bullet.reflectCount < 2) {
+						if (bullet.reflectCount == 3) {
+							this.world.destroyBody(bullet.body);
+							this.bullets.delete(bullet);
+						}
+						if (bullet.reflectCount < 3) {
 							const bulletDir = bullet.direction;
+							// const PlayerPos = damageRecord.damager._position;
+							// const bulletStartPos = bullet.position;
+							// const ObjPos = damageRecord.damaged._position;
 							const NewPos = bullet.body.getPosition();
+							// I CANT FUCKING CALCULATE REFLECTION
 							const direction = (0, planck_1.Vec2)(-bulletDir.x, -bulletDir.y);
 							const bullet2 = new bullet_1.Bullet(damageRecord.damager, NewPos, direction, bullet.typeString, damageRecord.damager.activeWeapon, false, bullet.layer, damageRecord.damager.game);
 							bullet2.reflectCount = bullet.reflectCount + 1;
+							bullet2.reflect = true;
 							damageRecord.damager.game.bullets.add(bullet2);
 							damageRecord.damager.game.newBullets.add(bullet2);
-						}
-						if (bullet.reflectCount == 2) {
-							this.world.destroyBody(bullet.body);
-							this.bullets.delete(bullet);
 						}
 					}
 				}
@@ -720,4 +725,3 @@ class Game {
 	}
 }
 exports.Game = Game;
-//# sourceMappingURL=game.js.map

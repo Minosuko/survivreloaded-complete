@@ -155,4 +155,3 @@ if (data_1.Config.botProtection) {
 		connectionAttempts.clear();
 	}, 3e4);
 }
-//# sourceMappingURL=webSocketServer.js.map

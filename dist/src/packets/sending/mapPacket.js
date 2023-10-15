@@ -54,4 +54,3 @@ class MapPacket extends sendingPacket_1.SendingPacket {
 	}
 }
 exports.MapPacket = MapPacket;
-//# sourceMappingURL=mapPacket.js.map

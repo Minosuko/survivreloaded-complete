@@ -371,4 +371,3 @@ function splitUpLoot(player, item, amount) {
 		new Loot(player.game, item, player.position, player.layer, amount % 60);
 }
 exports.splitUpLoot = splitUpLoot;
-//# sourceMappingURL=loot.js.map

@@ -8,4 +8,3 @@ class ReceivingPacket {
 	}
 }
 exports.ReceivingPacket = ReceivingPacket;
-//# sourceMappingURL=receivingPacket.js.map

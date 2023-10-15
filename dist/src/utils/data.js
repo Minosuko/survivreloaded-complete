@@ -33,4 +33,3 @@ function IdToType(id) {
 	return "";
 }
 exports.IdToType = IdToType;
-//# sourceMappingURL=data.js.map

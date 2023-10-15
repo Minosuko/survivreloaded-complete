@@ -14,4 +14,3 @@ class EmotePacket extends receivingPacket_1.ReceivingPacket {
 	}
 }
 exports.EmotePacket = EmotePacket;
-//# sourceMappingURL=emotePacket.js.map

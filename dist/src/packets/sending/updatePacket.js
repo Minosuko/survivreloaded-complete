@@ -287,4 +287,3 @@ class UpdatePacket extends sendingPacket_1.SendingPacket {
 	}
 }
 exports.UpdatePacket = UpdatePacket;
-//# sourceMappingURL=updatePacket.js.map

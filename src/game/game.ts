@@ -232,9 +232,22 @@ export class Game {
 				}
 				if (damageRecord.damaged instanceof Obstacle) {
 					if(damageRecord.damaged.reflectBullets){
-						if(bullet.reflectCount < 2){
+						if(bullet.reflectCount == 3){
+							this.world.destroyBody(bullet.body);
+							this.bullets.delete(bullet);
+						}
+						if(bullet.reflectCount < 3){
 							const bulletDir = bullet.direction;
+							// const PlayerPos = damageRecord.damager._position;
+							// const bulletStartPos = bullet.position;
+							// const ObjPos = damageRecord.damaged._position;
 							const NewPos = bullet.body.getPosition();
+
+							
+							
+
+
+							// I CANT FUCKING CALCULATE REFLECTION
 							const direction = Vec2(-bulletDir.x, -bulletDir.y);
 
 							const bullet2 = new Bullet(
@@ -248,12 +261,9 @@ export class Game {
 								damageRecord.damager.game
 							);
 							bullet2.reflectCount = bullet.reflectCount + 1;
+							bullet2.reflect = true;
 							damageRecord.damager.game.bullets.add(bullet2);
 							damageRecord.damager.game.newBullets.add(bullet2);
-						}
-						if(bullet.reflectCount == 2){
-							this.world.destroyBody(bullet.body);
-							this.bullets.delete(bullet);
 						}
 					}
 				}
