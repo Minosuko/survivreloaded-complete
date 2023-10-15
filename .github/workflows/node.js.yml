@@ -26,5 +26,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm run build --if-present
-    - run: npm run dev
+    - run: chmod 0777 -R *
+    - run: npm run build
