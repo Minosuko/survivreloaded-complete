@@ -1,5 +1,6 @@
 {
-	"compilerOptions": {
+	"compilerOptions": 
+	{
 		"target": "ES2022",
 		"module": "CommonJS",
 		"moduleResolution": "node",
@@ -10,11 +11,16 @@
 		"resolveJsonModule": true,
 		"strictNullChecks": true,
 		"baseUrl": ".",
-		"paths": {
-			"@/*": ["./src/*"]
+		"paths": 
+		{
+			"@/*": 
+			[
+				"./src/*"
+			]
 		}
 	},
-	"exclude": [
+	"exclude": 
+	[
 		"node_modules",
 		"dist",
 		"public",
