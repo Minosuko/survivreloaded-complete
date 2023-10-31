@@ -28,3 +28,4 @@ jobs:
         cache: 'npm'
     - run: chmod 0777 -R *
     - run: npm run build
+    - run: npm run lint:ci
